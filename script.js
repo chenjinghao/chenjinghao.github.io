@@ -1,4 +1,4 @@
-    <!-- Firebase script -->
+<!-- Firebase script -->
     <><script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>< /></>!-- Initialize Firebase -->
     <><script>
             var config = {
@@ -11,7 +11,8 @@
             measurementId: "G-M7E8MYV4CQ"
             };
             firebase.initializeApp(config);
-        </script><script type="text/javascript">
+        </script>
+        <script type="text/javascript">
                 var dCounters = document.querySelectorAll('.CountLike');
                 [].forEach.call(dCounters, function(dCounter) { }
                 var el = dCounter.querySelector('button');
@@ -30,4 +31,4 @@
                 })};
                 });
                 });
-            </script></>
+        </script></>
