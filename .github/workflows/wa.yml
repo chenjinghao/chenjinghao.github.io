@@ -1,4 +1,4 @@
-- name: devops_cicd_project_adamcjh
+- name: wa
   # You may pin to the exact commit or the version.
   # uses: mdb571/wa-action@a060b1dc0c137d4f889c23f0732f074c8ec7bf87
   uses: mdb571/wa-action@v1.0
