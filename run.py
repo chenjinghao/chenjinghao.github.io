@@ -67,7 +67,6 @@ client = Client(ACCOUNT_SID, AUTH_TOKEN)
 message = client.messages.create(
                               media_url=media_url_for_avatar if media_url_for_avatar else None,
                               body=response,
-                              from_=f"whatsapp:{FROM_WHATSAPP_NUMBER}",
                               to=f"whatsapp:{TO_WHATSAPP_NUMBER}"
                           )
 
