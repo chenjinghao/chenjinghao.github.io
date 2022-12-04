@@ -18,5 +18,5 @@ jobs:
           account_sid: ${{ secrets.TWILIO_ACCOUNT_SID }}
           auth_token: ${{ secrets.TWILIO_AUTH }}
           to_whatsapp_no: ${{ secrets.TO }}
-          message: "CI 👉🏻 Your message here"
+          message: "CI 👉🏻 A event trigged in your GitHub main branch"
         uses: khaled-ibtikar/whatsapp-push-notify-action@master
