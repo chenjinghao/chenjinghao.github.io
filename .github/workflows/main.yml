@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: devops_cicd_project_adamcjh
-        uses: chenjinghao/devops_cicd_project_adamcjh@main
+        uses: chenjinghao/devops_cicd_project_adamcjh@master
         with:
           from: ${{ secrets.FROM }}
           to: ${{secrets.TO }}
