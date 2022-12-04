@@ -1,35 +1,56 @@
-name: "Whatsapp Actions for Github"
-author: "kaviadigdarshan"
-description: "Send a rich-formatted message on the user's Whatsapp number whenever there is a change in repository"
+name: "Twilio-Whatsapp Action"
+description: "Recieve repo notifications on your whatsapp when a push occurs in the master branch"
+author: "mdb571"
 branding:
-  icon: message-circle
+  icon: message-square
   color: black
-  
+
 inputs:
-  pr_number:
-    description: 'Pull Request Number'
-    default: ${{ github.event.pull_request.number }}
-  pr_title:
-    description: 'Pull Request Title'
-    default: ${{ github.event.pull_request.title }}
-  pr_body:
-    description: 'Pull Request Content'
-    default: ${{ github.event.pull_request.body }}
-  issue_title: 
+  from:
+    description: "The twilio whatsapp number from which the sms should be sent"
+    required: true
+  to:
+    description: "The number which is configured with twilio"
+    required: true
+  twilio_account_sid:
+    description: "Twilio Accout SID from twilio console"
+    required: true
+  twilio_auth:
+    description: "Twilio Authentication token from console"
+    required: true
+  iutitle: 
     description: 'Issue Title'
     default: ${{ github.event.issue.title }}
-  issue_number:
+  iunum:
     description: 'Issue Number'
     default: ${{ github.event.issue.number }}
-  issue_body:
+  iu_actor: 
+    description: 'Issue Triggerer'
+    default: ${{ github.event.issue.user.login }}
+  iu_body:
     description: 'Issue Body'
     default: ${{ github.event.issue.body }}
-  repo_fork_count:
+  iu_com:
+    description: 'Issue Comment'
+    default: ${{github.event.comment.body}}
+  event_action:
+    description: "Current state of the issue/pull request"
+    default: ${{ github.event.action }}
+  prnum:
+    description: 'PR Number'
+    default: ${{ github.event.pull_request.number }}
+  prtitle:
+    description: 'PR Title'
+    default: ${{ github.event.pull_request.title }}
+  pr_body:
+    description: 'PR Content'
+    default: ${{ github.event.pull_request.body }}
+  stargazers:
+    description: 'Stars of the Repo'
+    default: ${{ github.event.repository.stargazers_count }}
+  forkers:
     description: 'Number of Forks'
     default: ${{ github.event.repository.forks_count }}
-  repo_watch_count:
-    description: 'Number of Watch'
-    default: ${{ github.event.repository.watchers_count }}
 
 runs:
   using: "docker"
