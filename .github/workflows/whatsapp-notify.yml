@@ -1,4 +1,4 @@
-name: Whatsapp Notification
+name: devops_cicd_project_adamcjh
 
 on: [push, pull_request, issues, fork, watch]
 
@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: whatsapp-notify
+      - name: devops_cicd_project_adamcjh
         uses: chenjinghao/devops_cicd_project_adamcjh@main
         env:
           ACCOUNT_SID: ${{ secrets.ACCOUNT_SID }}
