@@ -81,7 +81,7 @@ I also believe there is no better way to demonstrate my skills to potential empl
         - Dockerfile set up the environment to run the python file (main.py)
         - main.py import package from Twilio, retrieve all secrets(mentioned in the BackEnd section above) and save in my repository. As well as format the message. 
         - after main.py, Twilio will send the formatted message to WhatsApp.
-
+        - Process: workflow.yml -> action.yml -> Dockerfile -> main.py -> WhatsApp Message Notification
 
 ### What is Next?
 
