@@ -34,6 +34,9 @@ I also believe there is no better way to demonstrate my skills to potential empl
 - Subpages are instead hosted on the Notion page
     - Why? Easy to update & organize. Whenever I want to update my subpages, I only need to update them in my desktop application. I don't have to waste time writing code, push to GitHub and deploy into the server.**(i don't even need to press the save button!)** All of these will be done by Notion in the backend. Besides, Notion offers quite a lot of embeds Apps from external services. Take an Example of my Figma board on my resume page.
 
+- Linkedin Badge added
+    - visit [here](https://www.linkedin.com/pulse/how-create-linkedin-badge-your-website-amy-wallin/) to find out how-to.
+
 - Why third-party services listed below:
     - save time
     - consistency
@@ -112,6 +115,8 @@ I also believe there is no better way to demonstrate my skills to potential empl
 - [Notion](https://www.notion.so/)
 
 - [Canva](https://www.canva.com/)
+
+- [Linkedin](https://www.linkedin.com/)
 
 ***
 ## Contact me
