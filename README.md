@@ -1,7 +1,7 @@
 # my Personal Website
 This is NOT a "Homework" for DevOps class!
 
-![Good day](resouces\pictures\forWA.png "use Canva to design")
+![Good day](https://github.com/chenjinghao/chenjinghao.github.io/blob/4f6c4907aa7bfaa08e351d7973616234e05ee7ef/resouces/pictures/forWA.png "use Canva to design")
 
 ## About this website
 This website is hosting on GitHub Page.Why?
