@@ -28,13 +28,16 @@
                 <img src="resouces\pictures\GoodDaymate.png" style="width: 200px;height: auto;" alt="goodDay">
             </div>
             <div class="col align-self-end">
-                <div class="row">
+                <div class="row text-center">
                     <i id="highFive" onclick="highFive()" class="fa fa-regular fa-hand fa-4x"></i>
                 </div>
-                <div class="row text-start">
+                <div class="row text-center">
                     <p id="livelongandprosper">give me  <i class="fa-solid fa-5"></i></p>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <img src="resouces\pictures\cats-center.png" alt="cats">
         </div>
     </div>
     <!--navigation bar-->
@@ -65,7 +68,9 @@
     </nav>
     <!--About me section containing profile picture, self introduction, linkedin badge-->
     <div class="container-fluid">
+        <div class="row"><br></div>
         <div class="row">
+            <div class="col-auto"></div>
             <div class="col-2 text-center">
                 <img src="resouces\pictures\website_personal profile pic.png" class="rounded-circle" style="width: 200px;height:auto;" alt="profilePIC">
             </div>
@@ -79,18 +84,21 @@
                     data-vanity="adam-cjh" data-version="v1">
                 </div>
             </div>
+            <div class="col-auto"></div>
         </div>
     </div>
     <br>
     <!--contact form-->
-    <div class="container-fluid">
-        <div class="row bg-dark justify-content-cneter">
+    <div class="container-fluid bg-dark">
+        <div class="row"></div>
+        <div class="row justify-content-center">
             <div class="col"></div>
             <div class="col-auto align-self-center">
                 <br>
                 <form action="https://formsubmit.co/adam_cjh@outlook.com" method="POST">
                     <input type="text" name="name" placeholder="Name" required>
                     <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="text" name="Message" placeholder="Message" required>
                     <button type="submit" class="btn btn-outline-light btn-sm">Contact me</button>
                     <input type="hidden" name="_subject" value="New submission from landing page!">
                 </form>
@@ -100,6 +108,11 @@
         </div>
     </div>
     <!--footer-->
+    <div class="container position-absolute bottom-0 end-0">
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+    </div>
+    
 </body>
 
 </html>
