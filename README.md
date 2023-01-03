@@ -8,7 +8,7 @@ This website is hosted on GitHub Page. Why?
 
 Because it is **FREE!**
 
->Current Status: Still developing
+>Current Status: It is a functional website with room to improve.
 
 <https://chenjinghao.github.io>
 
@@ -65,8 +65,6 @@ I also believe there is no better way to demonstrate my skills to potential empl
 
 - **WhatsApp Notification:** Not all GitHub actions in its marketplace are created equal! Some of the solutions do not work for me. Most importantly, reading the author's repository will be better before implementing their solution.  
 
-- **Power Automation** I have a problem attaching the PDF file in Power Automation. I plan to attach a resume in the auto-respond to email when people try to contact me through my resume webpage.
-
 - **GitHub Page:** I should name my repository in the format username.github.io. Otherwise, it will appear as  username.github.io/your_repository_name. The problem was found when I tested my formsubmit contact form. 
 
 ### Learning
@@ -107,11 +105,6 @@ I also believe there is no better way to demonstrate my skills to potential empl
     - GitHub Action
     - GitHub Page
 
-- [Microsoft Office](https://www.office.com)
-    - Excel
-    - Power Automation
-    - Form
-
 - [Notion](https://www.notion.so/)
 
 - [Canva](https://www.canva.com/)
@@ -120,7 +113,7 @@ I also believe there is no better way to demonstrate my skills to potential empl
 
 ***
 ## Contact me
->my current status: Looking for a job
+>my current status: Looking for a data analyst or/and business analyst job/internship.
 
 Visit my [LinkedIn](www.linkedin.com/in/adam-cjh) for my detail & latest update.
 
