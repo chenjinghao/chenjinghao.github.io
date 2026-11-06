@@ -1180,7 +1180,27 @@ main {
   .contact-cards { grid-template-columns: 1fr; }
 }
 
-/* ---------- 20. Utilities ---------- */
+/* ---------- 20. Error page (404.html) ---------- */
+.error-page {
+  max-width: var(--rail);
+  margin: 0 auto;
+  padding: clamp(4rem, 12vh, 9rem) var(--gutter) 5rem;
+}
+
+.error-page h1 {
+  margin-bottom: 1rem;
+  font-family: var(--serif);
+  font-size: clamp(2.4rem, 1.6rem + 3vw, 3.6rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.error-page .prose { margin-bottom: 1.75rem; }
+
+.error-actions { margin: 0; }
+
+/* ---------- 21. Utilities ---------- */
 .visually-hidden {
   position: absolute;
   width: 1px;

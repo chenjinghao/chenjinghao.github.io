@@ -1,0 +1,6 @@
+# https://chenjinghao.github.io/robots.txt
+
+User-agent: *
+Allow: /
+
+Sitemap: https://chenjinghao.github.io/sitemap.xml
