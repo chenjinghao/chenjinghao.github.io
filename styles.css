@@ -483,6 +483,17 @@ main {
 }
 
 /* ---------- 10. Toolkit ---------- */
+.skill-strip {
+  margin: 0 0 1.35rem;
+}
+
+.skill-strip img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 40rem;
+}
+
 .toolkit {
   margin: 0;
   padding: 0;
