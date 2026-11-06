@@ -68,12 +68,14 @@
     media.addListener(onSchemeChange);
   }
 
-  /* ---------- Sticky header ---------- */
+  /* ---------- Sticky header & back-to-top ---------- */
   var header = document.querySelector(".site-header");
+  var toTop = document.querySelector(".to-top");
 
   function onScroll() {
-    if (!header) return;
-    header.classList.toggle("is-stuck", window.scrollY > 8);
+    var y = window.scrollY;
+    if (header) header.classList.toggle("is-stuck", y > 8);
+    if (toTop) toTop.classList.toggle("is-visible", y > 600);
   }
 
   onScroll();
