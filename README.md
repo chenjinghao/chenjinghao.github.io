@@ -19,18 +19,21 @@ push to `main`.
 | `assets/Jinghao_Chen_Resume.pdf` | Résumé linked from the header and contact section |
 | `assets/image.png` | Avatar in the header, and the site favicon |
 
-## Preserved from the previous site
+## Legacy pages
 
-The previous homepage is still available — nothing was deleted:
+Four standalone pages from the previous site are kept and still reachable; all
+carry `noindex` so they do not compete with the homepage in search:
 
-- `legacy-index.html` — the original Bootstrap homepage
-- `greetings.html`, `mailme.html`, `socialmedias.html`, `linkedinprofilebadge.html`, `index copy.html`
-- `style.css`, `script.js` — the old stylesheet and the `highFive()` handler those pages use
-- `README-legacy.md` — the old README
-- `resouces/`, `CI_deployment.png`, `WA-Screenshot.png`
+- `greetings.html`, `mailme.html`, `socialmedias.html`, `linkedinprofilebadge.html`
 
-`styles.css` and `app.js` are deliberately separate names from `style.css` and
-`script.js` so the archived pages keep working.
+Everything else from the old site — the Bootstrap homepage, its stylesheet,
+`script.js`, the `resouces/` images, the screenshots and the old README — was
+removed and remains available in git history:
+
+```powershell
+git log --diff-filter=D --name-only       # what was deleted, and when
+git show <commit>^:legacy-index.html      # recover a file from before deletion
+```
 
 ## Editing
 

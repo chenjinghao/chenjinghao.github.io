@@ -1,2 +1,0 @@
-Github Action workflow -> whatsapp notification
-    from https://medium.com/cocoaacademymag/how-to-integrate-github-actions-with-slack-telegram-and-whatsapp-67a4dca0f17d
