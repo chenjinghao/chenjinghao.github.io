@@ -678,16 +678,14 @@ main {
 }
 
 /* ---------- 12. Details / disclosure ---------- */
-.earlier,
-.more-certs {
+.earlier {
   margin-top: 1.5rem;
   border: 1px solid var(--rule);
   border-radius: var(--radius);
   background: var(--paper-raised);
 }
 
-.earlier summary,
-.more-certs summary {
+.earlier summary {
   position: relative;
   padding: 0.9rem 3rem 0.9rem 1.15rem;
   font-size: 0.875rem;
@@ -698,11 +696,9 @@ main {
   user-select: none;
 }
 
-.earlier summary::-webkit-details-marker,
-.more-certs summary::-webkit-details-marker { display: none; }
+.earlier summary::-webkit-details-marker { display: none; }
 
-.earlier summary::after,
-.more-certs summary::after {
+.earlier summary::after {
   content: "+";
   position: absolute;
   right: 1.15rem;
@@ -714,11 +710,9 @@ main {
   transition: transform 180ms ease;
 }
 
-.earlier[open] summary::after,
-.more-certs[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+.earlier[open] summary::after { transform: translateY(-50%) rotate(45deg); }
 
-.earlier summary:hover,
-.more-certs summary:hover { color: var(--accent); }
+.earlier summary:hover { color: var(--accent); }
 
 .earlier-list {
   margin: 0;
@@ -748,7 +742,7 @@ main {
 /* ---------- 13. Certifications ---------- */
 .certs {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.7rem;
   margin: 0;
   padding: 0;
@@ -759,8 +753,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  padding: 0.95rem 1rem;
-  min-height: 5.25rem;
+  padding: 0.85rem 1rem;
+  min-height: 4.75rem;
   background: var(--paper-raised);
   border: 1px solid var(--rule);
   border-radius: 10px;
@@ -781,25 +775,32 @@ main {
   color: var(--muted);
 }
 
-.certs-plain {
-  padding: 0 1.15rem 1.15rem;
-  border-top: 1px solid var(--rule);
-  padding-top: 1.15rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
+.cert-group + .cert-group { margin-top: 2.1rem; }
 
-.more-certs .certs { background: transparent; }
-
-.more-certs .certs li {
-  min-height: 0;
-  background: transparent;
-  border: 0;
+.cert-group-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 0.85rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--rule);
-  border-radius: 0;
-  padding: 0.55rem 0;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
 }
 
-.more-certs .certs li:last-child { border-bottom: 0; }
+.cert-count {
+  padding: 0.05rem 0.42rem;
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--muted);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+}
 
 /* ---------- 14. Publication ---------- */
 .paper {
@@ -1033,8 +1034,6 @@ main {
   .pillars { grid-template-columns: 1fr; }
 
   .certs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-
-  .certs-plain { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 46rem) {
