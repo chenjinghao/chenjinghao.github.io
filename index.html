@@ -1,161 +1,476 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Adam CHEN JINGHAO| Data Analyst| Agile| Power BI| Excel| SQL| Python</title>
-    <meta name="description" content="This is a personal website of Adam CHEN JINGHAO. It hoseting my personal resume and portfolios.">
-    <meta name="author" content="Adam CHEN JINGHAO">
-    <meta name="keywords" content="html,css, javascript, python, excel, powerbi, powerautomation, data analysis, business analysis, project management, software tester, quality assurance, Q">
-    <link rel="icon" type="image/x-icon" href="resouces\pictures\chart-column-solid.svg">
-    <!--bootstrap_style_sheet-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!--style_sheet-->
-    <link href="style.css" rel="stylesheet">
-    <!--for_high_five_button-->
-    <script src="https://kit.fontawesome.com/2ed969714b.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jinghao (Adam) Chen — Data Analyst &amp; Analytics Engineer</title>
+  <meta name="description" content="Jinghao (Adam) Chen — data analyst and analytics engineer in Vancouver. End-to-end pipelines on Microsoft Fabric and Google Cloud, dbt, Airflow, Power BI and Streamlit.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Jinghao (Adam) Chen — Data Analyst &amp; Analytics Engineer">
+  <meta property="og:description" content="End-to-end data pipelines on Microsoft Fabric and Google Cloud, from REST APIs to Power BI and Streamlit.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://chenjinghao.github.io/">
+  <link rel="canonical" href="https://chenjinghao.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#f8f6f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1110" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jinghao Chen",
+    "alternateName": "Adam Chen",
+    "jobTitle": "Data Analyst and Analytics Engineer",
+    "url": "https://chenjinghao.github.io/",
+    "email": "mailto:adam_cjh@outlook.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Surrey", "addressRegion": "BC", "addressCountry": "CA" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Langara College" },
+      { "@type": "CollegeOrUniversity", "name": "University of Sydney" }
+    ],
+    "sameAs": [
+      "https://github.com/chenjinghao",
+      "https://www.linkedin.com/in/adam-cjh/",
+      "https://adamchenjinghao.notion.site/"
+    ],
+    "knowsAbout": ["Data Engineering", "Analytics Engineering", "Microsoft Fabric", "dbt", "Apache Airflow", "Power BI", "Python", "SQL"]
+  }
+  </script>
 </head>
-
 <body>
-    <!--header_profilePIC_GoodDay_HighFive-->
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <img src="resouces\pictures\GoodDaymate.png" class="img-fluid" style="width: 200px;height: auto;" alt="goodDay">
-            </div>
-        </div>
-        <div class="row">
-            <img src="resouces\pictures\cats-center.png" alt="cats">
-        </div>
-    </div>
-    <!--navigation bar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Adam CHEN JINGHAO</a>
-            <!--navbar toggle-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08"
-                aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--list of pages-->
-            <div class="collapse navbar-collapse" id="navbarsExample08">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://adamchenjinghao.notion.site/my_Resume-3b113ebf370a4ef1952ee5acd8ed0923">Resume</a>
-                    </li><li class="nav-item">
-                        <a class="nav-link" href="https://adamchenjinghao.notion.site/my_Portfolio-52dd63a53c104c568898f130767f23b4">Portfolio</a>
-                    </li><li class="nav-item">
-                        <a class="nav-link" href="https://adamchenjinghao.notion.site/myNotes-548ad9e9415f454caf1058ed79f36ea8">myNote</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--About me section containing profile picture, self introduction, linkedin badge-->
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-md-2">
-                <div class="row text-center">                        <img src="resouces\pictures\website_personal profile pic.png" class="rounded-circle" style="width: 300px;height:auto;" alt="profilePIC">
-                </div>
-                <div class="row">
-                    <i id="highFive" onclick="highFive()" class="fa fa-regular fa-hand fa-4x"></i>
-                </div>
-                <div class="row">
-                    <p id="livelongandprosper">give me  <i class="fa-solid fa-5"></i></p>
-                </div>
-            </div>
-            <div class="col-md-7">
-                <div class="row">
-                    <h2>About me</h2>
-                </div>
-                <div class="row">
-                    <p>
-                        A business and certified finance professional with 6 years of experience in several industries, including finance and e-commerce. Competent in analyzing financial data, negotiating business transactions, risk management and event planning. Successfully organized and managed 2 event shows as the sole organizer, demonstrating exceptional multitasking and project management skills. Efficiently coordinated all aspects of the events, including hiring and supervising part-time staff, arranging logistics, and overseeing the setup and management of the booths. Provided outstanding customer service throughout the entire duration of the events, ensuring a positive experience to maximize brand awareness.
-                    </p>
-                    <a href="https://adamchenjinghao.notion.site/my_Resume-3b113ebf370a4ef1952ee5acd8ed0923?pvs=4" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">View my resume</a>
-                    <p> </p>
-                    <div class="alert bg-dark text-white" role="alert">
-                        <p><b>Current Status:</b> Practicing on leetcode, completing projects and learning French</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <h4>Projects</h4>
-                    <div class="list-group">
-                        <a href="https://adamchenjinghao.notion.site/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp-for-2023-Finishing-projects-ed7d06084e504a48a8c9fe8931e91789?pvs=4" class="list-group-item list-group-item-action active list-group-item-dark" aria-current="true">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1 text-white">100 Days of Code: The Complete Python Pro Bootcamp for 2023</h5>
-                            <small>On-going</small>
-                          </div>
-                        </a>
-                        <a href="https://adamchenjinghao.notion.site/Capstone-Project-of-Google-Data-Analytics-Professional-Certificate-3f32c1b2f73b459f9760597c12a40f4e?pvs=4" class="list-group-item list-group-item-action">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Capstone Project of Google Data Analytics Professional Certificate</h5>
-                            <small class="text-body-secondary">Completed</small>
-                          </div>
-                        </a>
-                        <a href="https://adamchenjinghao.notion.site/Capstone-Project-for-NUS-Fintech-SG-Programme-6d9ea33b74d742ea88901a0f4980cb65?pvs=4" class="list-group-item list-group-item-action">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Capstone Project for NUS Fintech SG Programme</h5>
-                            <small class="text-body-secondary">Completed</small>
-                          </div>
-                        </a>
-                        <a href="https://adamchenjinghao.notion.site/adamchenjinghao/my_Portfolio-52dd63a53c104c568898f130767f23b4" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">View all projects</a>
-                        <p> </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <h4>Certificates</h4>
-                    <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action">Google Data Analytics is offered by Google</a>
-                        <a href="#" class="list-group-item list-group-item-action">Microsoft Certified: Power BI Data Analyst Associate</a>
-                        <a href="#" class="list-group-item list-group-item-action">Career Essentials in Business Analysis by Microsoft and LinkedIn</a>
-                        <a href="#" class="list-group-item list-group-item-action">CS50's Computer Science for Business Professionals offered by HarvardX</a>
-                        <a href="#" class="list-group-item list-group-item-action">Learn SQL Basics for Data Science</a>
-                        <a href="https://adamchenjinghao.notion.site/my-Certifications-9c7c75df42944d9cad345dcd029939ee" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">View all Certificates</a>
-                    </div>
-                    <p> </p>
-                </div>
-            </div>
-            <div class="col-md-2 ml-auto">
-                <div class="row">
-                    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="small" data-theme="dark" data-type="VERTICAL"
-                    data-vanity="adam-cjh" data-version="v1">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- contact form-->
-    <div class="container-fluid bg-dark">
-        <div class="row"></div>
-        <div class="row justify-content-center">
-            <div class="col"></div>
-            <div class="col-auto align-self-center">
-                <br>
-                <form action="https://formsubmit.co/adam_cjh@outlook.com" method="POST">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email Address" required>
-                    <div class="row"><p> </p></div>
-                    <textarea placeholder="Your Message" class="form-control" name="message" rows="2" required></textarea>
-                    <div class="row"><p> </p></div>
-                    <button type="submit" class="btn btn-outline-light btn-sm">Contact me</button>
-                    <input type="hidden" name="_subject" value="New submission from landing page!">
-                </form>
-                <br>
-            </div>
-            <div class="col"></div>
-        </div>
-        <div class="text-white">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
-                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-        </div>
-    </div>
-    <!--footer--> 
-</body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">JC</span>
+        <span class="brand-name">Jinghao Chen</span>
+      </a>
+
+      <nav class="nav" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#credentials">Credentials</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-small" href="assets/Jinghao_Chen_Resume.pdf" download>Résumé</a>
+        <button class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.5"></circle>
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"></path>
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ── Hero ───────────────────────────────────────────── -->
+    <section class="hero" id="top">
+      <p class="eyebrow"><span class="dot-live" aria-hidden="true"></span> Surrey, BC · Open to data roles</p>
+      <h1>Jinghao <span class="h1-alt">(Adam)</span> Chen</h1>
+      <p class="lede">
+        Data analyst and analytics engineer. I build pipelines that turn messy
+        API responses into modelled tables — and the dashboards that make them
+        obvious to the people who need them.
+      </p>
+
+      <p class="hero-links">
+        <a class="btn" href="assets/Jinghao_Chen_Resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a>
+        <a class="btn btn-ghost" href="mailto:adam_cjh@outlook.com">Get in touch</a>
+      </p>
+
+      <dl class="stats">
+        <div class="stat">
+          <dt>NSERC grant secured</dt>
+          <dd>$359,928</dd>
+        </div>
+        <div class="stat">
+          <dt>IEEE publication</dt>
+          <dd>CCECE&nbsp;2024</dd>
+        </div>
+        <div class="stat">
+          <dt>Langara PDD</dt>
+          <dd>Distinction</dd>
+        </div>
+        <div class="stat">
+          <dt>Certifications</dt>
+          <dd>20</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- ── About ──────────────────────────────────────────── -->
+    <section class="section" id="work">
+      <div class="section-label">
+        <span class="section-num">01</span>
+        <h2>What I do</h2>
+      </div>
+      <div class="section-body">
+        <p class="prose">
+          I came to data from the business side — a decade across financial
+          advisory, immigration consulting and e-commerce taught me what a
+          stakeholder actually needs from a report. Now I build the systems that
+          produce it: ingestion, medallion-architecture warehouses, tested
+          transformations, and semantic models that hold up under scrutiny.
+        </p>
+        <p class="prose">
+          Most recently I re-engineered a financial-market analytics platform from
+          Google Cloud onto Microsoft Fabric, keeping both implementations live,
+          and built the data layer behind a community-services app that secured a
+          $359,928 NSERC grant.
+        </p>
+
+        <ul class="pillars">
+          <li>
+            <h3>Data engineering</h3>
+            <p>REST/API ingestion, Delta Lake and PostgreSQL warehouses, medallion layers, idempotent and rate-limit-aware loads, orchestration that fails loudly.</p>
+          </li>
+          <li>
+            <h3>Analytics engineering</h3>
+            <p>dbt models from staging to marts, generic and singular tests, source freshness, documented lineage, semantic models with DAX measures.</p>
+          </li>
+          <li>
+            <h3>Delivery &amp; insight</h3>
+            <p>Power BI, Tableau and Streamlit dashboards, plus Python and scikit-learn where a forecast beats a chart.</p>
+          </li>
+        </ul>
+
+        <h3 class="subhead">Toolkit</h3>
+        <dl class="toolkit">
+          <div>
+            <dt>Languages</dt>
+            <dd>
+              <span>SQL (PostgreSQL, T-SQL)</span>
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>PySpark</span>
+              <span>R</span>
+              <span>DAX</span>
+            </dd>
+          </div>
+          <div>
+            <dt>Platforms</dt>
+            <dd>
+              <span>Microsoft Fabric</span>
+              <span>OneLake</span>
+              <span>Delta Lake</span>
+              <span>BigQuery</span>
+              <span>PostgreSQL</span>
+              <span>MinIO</span>
+            </dd>
+          </div>
+          <div>
+            <dt>Transform</dt>
+            <dd>
+              <span>dbt Core</span>
+              <span>Apache Airflow 3</span>
+              <span>Astronomer Cosmos</span>
+              <span>Fabric Data Factory</span>
+              <span>dlt</span>
+            </dd>
+          </div>
+          <div>
+            <dt>Delivery</dt>
+            <dd>
+              <span>Power BI</span>
+              <span>Tableau</span>
+              <span>Streamlit</span>
+              <span>Excel / Power Query</span>
+            </dd>
+          </div>
+          <div>
+            <dt>Cloud &amp; ML</dt>
+            <dd>
+              <span>AWS</span>
+              <span>Google Cloud</span>
+              <span>Docker</span>
+              <span>GitHub Actions</span>
+              <span>Vertex AI</span>
+              <span>scikit-learn</span>
+              <span>LangChain</span>
+              <span>NLTK</span>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ── Projects ───────────────────────────────────────── -->
+    <section class="section" id="projects">
+      <div class="section-label">
+        <span class="section-num">02</span>
+        <h2>Selected projects</h2>
+      </div>
+      <div class="section-body">
+        <p class="prose section-intro">
+          Three builds that show the whole path: source → warehouse → model →
+          something a person can act on.
+        </p>
+
+        <article class="project project-featured">
+          <div class="project-head">
+            <h3>Financial market analytics platform</h3>
+            <p class="project-meta">Microsoft Fabric · Power BI · Google Cloud · Airflow · dbt</p>
+          </div>
+          <p>
+            An end-to-end ELT platform ingesting daily prices, company profiles and
+            news sentiment for the three most actively traded stocks. Built twice:
+            a Bronze–Silver–Gold medallion architecture of four PySpark notebooks in
+            Microsoft Fabric, and the original open-source stack on GCP.
+          </p>
+          <ul class="project-points">
+            <li>Delta <code>MERGE</code> upserts make every load idempotent; market-calendar logic skips weekends and holidays.</li>
+            <li>Gold-layer aggregates join price activity with bullish/bearish sentiment, 100-day averages and volume change.</li>
+            <li>Orchestrated by a scheduled Fabric Data Factory pipeline with per-notebook failure alerts to Outlook.</li>
+            <li>GCP twin runs Airflow 3 with Astronomer Cosmos + dbt, MinIO and PostgreSQL, deployed via GitHub Actions.</li>
+          </ul>
+          <ul class="links">
+            <li><a href="https://www.jinghaodata.engineer">Live Streamlit app <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://github.com/chenjinghao/ms_fabric_project">Fabric repo <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://youtu.be/NFiescC8d34">Dashboard walkthrough <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://github.com/chenjinghao/de-project-1-airflow-dbt-4-ELT">Airflow/dbt backend <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <h3>Real-Time Access to Essential Services</h3>
+            <p class="project-meta">Streamlit · Python · NLTK · LangChain · RBAC</p>
+          </div>
+          <p>
+            A shelter-finding web app for community services, built as a funded
+            research project at Langara College's Applied Research Centre. The
+            project was awarded $359,928 from NSERC's College and Community Social
+            Innovation Fund.
+          </p>
+          <ul class="project-points">
+            <li>Granular role-based access control, from per-shelter data entry to global admin governance.</li>
+            <li>NLP over user reviews with NLTK, feeding dynamic rating and time-filtered dashboards.</li>
+            <li>LangChain query engine that translates natural-language questions into database queries, and rejects out-of-scope ones.</li>
+            <li>Admin control centre with bed-availability monitoring and one-click manager notifications.</li>
+          </ul>
+          <ul class="links">
+            <li><a href="https://bit.ly/4u5ElJ6">Demo video <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://nserc-crsng.canada.ca/en/funding-decisions/result/2267">NSERC award record <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <h3>AI-powered HVAC optimisation</h3>
+            <p class="project-meta">Python · CNN-LSTM · Tableau · Client delivery</p>
+          </div>
+          <p>
+            Capstone for Langara College's facilities department and Prism
+            Engineering: detecting anomalies in HVAC sensor data and forecasting
+            temperature 15 minutes ahead to support energy-efficient control.
+          </p>
+          <ul class="project-points">
+            <li>Exploratory analysis surfaced faults the client confirmed would shape their next system design.</li>
+            <li>CNN-LSTM model supported Net-Zero 2030 energy targets; findings delivered to the client's engineering team.</li>
+            <li>Won the Innovative Award at Langara's Applied Research Day 2025.</li>
+          </ul>
+          <ul class="links">
+            <li><a href="https://ai4hvac.notion.site/">Project site <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://langara.ca/news-events/stories/meet-winners-applied-research-day">Applied Research Day <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── Experience ─────────────────────────────────────── -->
+    <section class="section" id="experience">
+      <div class="section-label">
+        <span class="section-num">03</span>
+        <h2>Experience</h2>
+      </div>
+      <div class="section-body">
+        <ol class="timeline">
+          <li>
+            <div class="entry-head">
+              <h3>Research Assistant</h3>
+              <span class="entry-when">Jan 2025 — Jul 2025</span>
+            </div>
+            <p class="entry-org">Langara College Applied Research Centre · Vancouver</p>
+            <ul>
+              <li>Selected to extend coursework into a grant-funded project building the Homeless Shelter Finder app.</li>
+              <li>Architected and deployed the application to Heroku with CI/CD for zero-downtime releases, and provisioned the backing database through a cost-benefit evaluation.</li>
+              <li>Engineered a LangChain knowledge-base pipeline over the application database, and role-based authentication governing access levels.</li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="entry-head">
+              <h3>Course Assistant</h3>
+              <span class="entry-when">Sep 2024 — Jul 2025</span>
+            </div>
+            <p class="entry-org">Langara College · Vancouver</p>
+            <ul>
+              <li>Marked two computer science units, giving detailed written feedback on assignments.</li>
+              <li>Planned and hosted the capstone competition event, coordinating student presentations and industry judges.</li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="entry-head">
+              <h3>Travel Counselor</h3>
+              <span class="entry-when">May 2024 — Aug 2024</span>
+            </div>
+            <p class="entry-org">Discover Surrey · Surrey, BC</p>
+            <ul>
+              <li>Collected and reported event attendance and visitor data used for tourism planning and small-business support.</li>
+            </ul>
+          </li>
+        </ol>
+
+        <details class="earlier">
+          <summary>Earlier career — finance, trading and operations (2016–2022)</summary>
+          <ul class="earlier-list">
+            <li>
+              <strong>Retail Stock Trader</strong> · 2020 — 2022
+              <span>Backtested swing, day and options strategies; technical analysis for risk-managed position sizing.</span>
+            </li>
+            <li>
+              <strong>Immigration Consultant</strong> · CHENG QI (Singapore) Pte. Ltd. · 2019 — 2021
+              <span>End-to-end case management through changing regulatory requirements.</span>
+            </li>
+            <li>
+              <strong>Financial Consultant</strong> · IPP Financial Advisers · 2018 — 2020
+              <span>Portfolio reviews and data-driven risk assessments; built WeChat acquisition campaigns.</span>
+            </li>
+            <li>
+              <strong>Ecommerce Manager</strong> · Hao Jun Private Ltd · 2017 — 2018
+              <span>Omnichannel sales analysis for product assortment; supplier negotiation with China-based partners.</span>
+            </li>
+            <li>
+              <strong>Business Development Executive</strong> · Guangzhou Rui He Fu Investment Management · 2016
+              <span>Roadshow project targeting IPO candidates; provider negotiations and cost savings.</span>
+            </li>
+          </ul>
+        </details>
+
+        <h3 class="subhead">Education</h3>
+        <ol class="timeline timeline-compact">
+          <li>
+            <div class="entry-head">
+              <h3>Post-Degree Diploma, Data Analytics</h3>
+              <span class="entry-when">2024 — 2025</span>
+            </div>
+            <p class="entry-org">Langara College · Vancouver — graduated with Distinction</p>
+          </li>
+          <li>
+            <div class="entry-head">
+              <h3>Bachelor of International and Global Studies</h3>
+              <span class="entry-when">2012 — 2015</span>
+            </div>
+            <p class="entry-org">University of Sydney · Majors: International Business &amp; Political Economy</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ── Credentials ────────────────────────────────────── -->
+    <section class="section" id="credentials">
+      <div class="section-label">
+        <span class="section-num">04</span>
+        <h2>Credentials</h2>
+      </div>
+      <div class="section-body">
+        <p class="prose section-intro">
+          The ones I'd point to first — the Microsoft data stack, orchestration,
+          and the warehouse modelling layer underneath the dashboards.
+        </p>
+
+        <ul class="certs">
+          <li><strong>Fabric Analytics Engineer Associate</strong><span>Microsoft · 2026</span></li>
+          <li><strong>Power BI Data Analyst Associate</strong><span>Microsoft · 2022</span></li>
+          <li><strong>Cloud Practitioner</strong><span>AWS · 2025</span></li>
+          <li><strong>DAG Authoring for Apache Airflow 3</strong><span>Astronomer · 2025</span></li>
+          <li><strong>dbt Fundamentals</strong><span>dbt Labs · 2025</span></li>
+          <li><strong>Data Engineering</strong><span>DeepLearning.AI / AWS · 2025</span></li>
+          <li><strong>SQL (Advanced)</strong><span>HackerRank · 2025</span></li>
+          <li><strong>Claude with Google Vertex AI</strong><span>Anthropic · 2026</span></li>
+          <li><strong>Data Analytics</strong><span>Google · 2022</span></li>
+        </ul>
+
+        <details class="more-certs">
+          <summary>Eleven more certifications</summary>
+          <ul class="certs certs-plain">
+            <li><strong>Data Engineering Zoomcamp</strong><span>DataTalks.Club · 2026</span></li>
+            <li><strong>Apache Airflow 3 Fundamentals</strong><span>Astronomer · 2025</span></li>
+            <li><strong>Machine Learning in Python with scikit-learn</strong><span>Inria · 2025</span></li>
+            <li><strong>AI Agents Fundamentals</strong><span>Hugging Face · 2025</span></li>
+            <li><strong>Introducing Generative AI with AWS</strong><span>Udacity · 2024</span></li>
+            <li><strong>Career Essentials in Business Analysis</strong><span>Microsoft / LinkedIn · 2023</span></li>
+            <li><strong>FinTech for Non-Technical Executives</strong><span>NUS · 2023</span></li>
+            <li><strong>SQL for Data Science</strong><span>UC Davis / Coursera · 2022</span></li>
+            <li><strong>Excel for Data Analytics &amp; Visualization</strong><span>Macquarie University · 2022</span></li>
+            <li><strong>Applied Scrum for Agile Project Management</strong><span>University of Maryland · 2022</span></li>
+            <li><strong>CS50 for Business Professionals</strong><span>Harvard · 2022</span></li>
+          </ul>
+        </details>
+
+        <h3 class="subhead">Publication &amp; awards</h3>
+        <div class="paper">
+          <h4>Efficient Machine Learning Model Deployment in Clinical Decision Support Systems</h4>
+          <p class="paper-meta">2024 IEEE Canadian Conference on Electrical and Computer Engineering (CCECE) · with R. Alvarez and Q. T. Nguyen</p>
+          <p>
+            Compared XGBoost, Random Forest and SVM for predicting outcomes of
+            mechanically ventilated patients on MIMIC-III, then used SHAP to cut
+            nearly 60% of features while preserving AUC.
+          </p>
+          <p><a href="https://ieeexplore.ieee.org/document/10667100">Read on IEEE Xplore <span aria-hidden="true">↗</span></a></p>
+        </div>
+
+        <ul class="awards">
+          <li>
+            <strong>Innovative Award</strong>, Applied Research Day 2025 — Langara College
+            <span>For the AI-powered HVAC energy optimisation capstone.</span>
+          </li>
+          <li>
+            <strong>Second place</strong>, Langara Open Student Scholar Prize 2024
+            <span>For “Employing Random Sampling Techniques on Machine Learning Models”.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── Contact ────────────────────────────────────────── -->
+    <section class="section" id="contact">
+      <div class="section-label">
+        <span class="section-num">05</span>
+        <h2>Contact</h2>
+      </div>
+      <div class="section-body">
+        <p class="prose">
+          I'm in Surrey, BC — a short trip from downtown Vancouver — and open to
+          data analyst, analytics engineering and data engineering roles. The
+          fastest way to reach me is email.
+        </p>
+        <ul class="contact-list">
+          <li><a href="mailto:adam_cjh@outlook.com">adam_cjh@outlook.com</a></li>
+          <li><a href="https://www.linkedin.com/in/adam-cjh/">linkedin.com/in/adam-cjh</a></li>
+          <li><a href="https://github.com/chenjinghao">github.com/chenjinghao</a></li>
+          <li><a href="https://adamchenjinghao.notion.site/beyond">Notion site</a></li>
+          <li><a href="assets/Jinghao_Chen_Resume.pdf" download>Résumé (PDF)</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Jinghao Chen · Surrey, BC</p>
+    <p class="footer-note">Built with plain HTML, CSS and JavaScript. No trackers.</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
 </html>
+
