@@ -28,7 +28,7 @@
   --rail: 40rem;
   --gutter: clamp(1.25rem, 4vw, 3rem);
   --radius: 14px;
-  --header-h: 4.25rem;
+  --header-h: 5.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -157,10 +157,10 @@ code {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.85rem;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.9375rem;
+  font-size: 1.0625rem;
   letter-spacing: -0.01em;
   white-space: nowrap;
 }
@@ -168,8 +168,8 @@ code {
 .brand-mark {
   display: block;
   flex: none;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   object-fit: cover;
   background: var(--paper-raised);
@@ -183,7 +183,7 @@ code {
   align-items: center;
   gap: 1.4rem;
   margin-left: auto;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
 }
 
 .nav a {
@@ -255,8 +255,8 @@ code {
 .theme-toggle {
   display: inline-grid;
   place-items: center;
-  width: 2.15rem;
-  height: 2.15rem;
+  width: 2.5rem;
+  height: 2.5rem;
   padding: 0;
   color: var(--muted);
   background: transparent;
@@ -943,6 +943,25 @@ main {
 .skip-link:focus { top: 0; }
 
 /* ---------- 18. Responsive ---------- */
+@media (max-width: 56rem) {
+  .header-inner { gap: 1rem; }
+
+  .brand {
+    gap: 0.7rem;
+    font-size: 1rem;
+  }
+
+  .nav {
+    gap: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .theme-toggle {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+
 @media (max-width: 60rem) {
   .section {
     grid-template-columns: 1fr;
