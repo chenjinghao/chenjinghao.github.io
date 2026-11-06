@@ -388,6 +388,44 @@ main {
   letter-spacing: -0.02em;
 }
 
+/* ---------- 7b. Hero story ---------- */
+.story {
+  max-width: var(--rail);
+  margin-top: clamp(3rem, 6.5vw, 4.5rem);
+}
+
+.story-title {
+  margin-bottom: 1.1rem;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.story p {
+  max-width: 52ch;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.story blockquote {
+  margin: 1.6rem 0;
+  padding: 0.2rem 0 0.2rem 1.25rem;
+  border-left: 2px solid var(--accent);
+}
+
+.story blockquote p {
+  margin: 0;
+  max-width: 42ch;
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 1rem + 0.6vw, 1.45rem);
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
 /* ---------- 8. Sections ---------- */
 .section {
   display: grid;
