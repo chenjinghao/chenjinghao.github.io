@@ -310,7 +310,13 @@ main {
 
 /* ---------- 7. Hero ---------- */
 .hero {
-  padding: clamp(3rem, 9vw, 6.5rem) 0 clamp(3rem, 6vw, 4.5rem);
+  padding: clamp(3rem, 9vw, 6.5rem) 0 clamp(1rem, 2vw, 1.5rem);
+}
+
+/* The hero now ends with the story, so the first section does not need its
+   full top padding on top of the hero's own bottom spacing. */
+.hero + .section {
+  padding-top: clamp(1.5rem, 2.5vw, 2rem);
 }
 
 .eyebrow {
@@ -428,7 +434,7 @@ main {
   text-wrap: balance;
 }
 
-.story-outro { margin-bottom: 0; }
+.story p.story-outro { margin-bottom: 0; }
 
 /* ---------- 8. Sections ---------- */
 .section {
