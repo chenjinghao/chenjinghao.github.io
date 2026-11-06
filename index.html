@@ -254,14 +254,8 @@
         <article class="project project-featured">
           <div class="project-head">
             <h3>Financial market analytics platform</h3>
-            <p class="project-meta">Microsoft Fabric · Power BI · Google Cloud · Airflow · dbt</p>
+            <p class="project-meta">Microsoft Fabric · Power BI · Pyspark · Google Cloud · Airflow · dbt · Streamlit</p>
           </div>
-          <ul class="links">
-            <li><a href="https://www.jinghaodata.engineer" target="_blank" rel="noopener noreferrer">Live Streamlit app <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
-            <li><a href="https://github.com/chenjinghao/de-project-1-airflow-dbt-4-ELT" target="_blank" rel="noopener noreferrer">Airflow/dbt backend repo<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
-            <li><a href="https://github.com/chenjinghao/ms_fabric_project" target="_blank" rel="noopener noreferrer">Fabric repo <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
-            <li><a href="https://youtu.be/NFiescC8d34" target="_blank" rel="noopener noreferrer">Power BI Dashboard <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
-          </ul>
           <p>
             An end-to-end ELT platform ingesting daily prices, company profiles and
             news sentiment for the three most actively traded stocks. Built twice:
@@ -275,13 +269,18 @@
             <li>Built and deployed a GCP version of the platform, running Airflow and dbt in Docker on a virtual machine for daily
 incremental PostgreSQL updates and hosting a Streamlit dashboard on Cloud Run.</li>
           </ul>
-
+          <ul class="links">
+            <li><a href="https://www.jinghaodata.engineer" target="_blank" rel="noopener noreferrer">Live Streamlit app <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://github.com/chenjinghao/de-project-1-airflow-dbt-4-ELT" target="_blank" rel="noopener noreferrer">Airflow/dbt backend repo<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://github.com/chenjinghao/ms_fabric_project" target="_blank" rel="noopener noreferrer">Fabric repo <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://youtu.be/NFiescC8d34" target="_blank" rel="noopener noreferrer">Power BI Dashboard <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          </ul>
         </article>
 
         <article class="project">
           <div class="project-head">
             <h3>Real-Time Access to Essential Services</h3>
-            <p class="project-meta">Streamlit · Python · NLTK · LangChain · RBAC</p>
+            <p class="project-meta">Streamlit · Python · SQL · NLTK · LangChain · Heroku · Github Action</p>
           </div>
           <p>
             A shelter-finding web app for community services, built as a funded
@@ -290,21 +289,22 @@ incremental PostgreSQL updates and hosting a Streamlit dashboard on Cloud Run.</
             Innovation Fund.
           </p>
           <ul class="project-points">
-            <li>Granular role-based access control, from per-shelter data entry to global admin governance.</li>
-            <li>NLP over user reviews with NLTK, feeding dynamic rating and time-filtered dashboards.</li>
-            <li>LangChain query engine that translates natural-language questions into database queries, and rejects out-of-scope ones.</li>
-            <li>Admin control centre with bed-availability monitoring and one-click manager notifications.</li>
+            <li>Independently developed and deployed a Streamlit application for an external client, enabling community members to locate nearby shelters and view real-time bed availability.</li>
+            <li>Used NLTK to clean and tokenize shelter reviews, extract recurring keywords, and analyze rating distributions in shelter-specific manager dashboards, restricting each manager to data for their assigned shelter.</li>
+            <li>Built an LLM-to-SQL chatbot that converted natural-language questions into database queries and returned user-friendly answers, with guardrails that rejected out-of-scope requests.</li>
+            <li>Translated client feedback into an interactive geolocation map with color-coded availability indicators and database-backed, role-based workflows for managers and administrators to update shelter capacity, community events, and user access.</li>
           </ul>
           <ul class="links">
             <li><a href="https://bit.ly/4u5ElJ6" target="_blank" rel="noopener noreferrer">Demo video <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
             <li><a href="https://nserc-crsng.canada.ca/en/funding-decisions/result/2267" target="_blank" rel="noopener noreferrer">NSERC award record <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://langara.ca/news-events/stories/meet-winners-applied-research-day" target="_blank" rel="noopener noreferrer">Mentioned in Langara news <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
           </ul>
         </article>
 
         <article class="project">
           <div class="project-head">
             <h3>AI-powered HVAC optimisation</h3>
-            <p class="project-meta">Python · CNN-LSTM · Tableau · Client delivery</p>
+            <p class="project-meta">Python · sklearn · Tableau · beautifulsoup</p>
           </div>
           <p>
             Capstone for Langara College's facilities department and Prism
@@ -312,14 +312,14 @@ incremental PostgreSQL updates and hosting a Streamlit dashboard on Cloud Run.</
             temperature 15 minutes ahead to support energy-efficient control.
           </p>
           <ul class="project-points">
-            <li>Exploratory analysis surfaced faults the client confirmed would shape their next system design.</li>
-            <li>CNN-LSTM model supported Net-Zero 2030 energy targets; findings delivered to the client's engineering team.</li>
+            <li>Analyzed real-time HVAC sensor data from five air-handling units serving 117 zones in Langara College’s Building B, using Python to identify operational anomalies and energy-efficiency opportunities.</li>
+            <li>Developed a CNN-LSTM model to forecast 15-minute zone-temperature changes and support data-driven HVAC set-point recommendations that balance energy efficiency with occupant comfort.</li>
+            <li>Translated analytical and model outputs into anomaly heat maps and an interactive Tableau dashboard, presenting decision-ready findings to Langara Facilities and Prism Engineering in support of operational improvements.</li>
             <li>Won the Innovative Award at Langara's Applied Research Day 2025.</li>
           </ul>
           <ul class="links">
             <li><a href="https://ai4hvac.notion.site/" target="_blank" rel="noopener noreferrer">Project site <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
-            <li><a href="https://lnkd.in/p/gZSz7FK4" target="_blank" rel="noopener noreferrer">Project post on LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
-            <li><a href="https://langara.ca/news-events/stories/meet-winners-applied-research-day" target="_blank" rel="noopener noreferrer">Applied Research Day <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://lnkd.in/p/gZSz7FK4" target="_blank" rel="noopener noreferrer">Project post on LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>            
           </ul>
         </article>
       </div>
