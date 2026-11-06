@@ -78,7 +78,7 @@
   <main id="main">
     <!-- ── Hero ───────────────────────────────────────────── -->
     <section class="hero" id="top">
-      <p class="eyebrow"><span class="dot-live" aria-hidden="true"></span> Surrey, BC · Open to data related roles</p>
+      <!-- <p class="eyebrow"><span class="dot-live" aria-hidden="true"></span> Surrey, BC · Open to data related roles</p> -->
       <h1>Jinghao <span class="h1-alt">(Adam)</span> Chen</h1>
       <!-- <p class="lede">
         Data analyst and analytics engineer. I build pipelines that turn messy
@@ -256,6 +256,12 @@
             <h3>Financial market analytics platform</h3>
             <p class="project-meta">Microsoft Fabric · Power BI · Google Cloud · Airflow · dbt</p>
           </div>
+          <ul class="links">
+            <li><a href="https://www.jinghaodata.engineer" target="_blank" rel="noopener noreferrer">Live Streamlit app <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://github.com/chenjinghao/de-project-1-airflow-dbt-4-ELT" target="_blank" rel="noopener noreferrer">Airflow/dbt backend repo<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://github.com/chenjinghao/ms_fabric_project" target="_blank" rel="noopener noreferrer">Fabric repo <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://youtu.be/NFiescC8d34" target="_blank" rel="noopener noreferrer">Power BI Dashboard <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          </ul>
           <p>
             An end-to-end ELT platform ingesting daily prices, company profiles and
             news sentiment for the three most actively traded stocks. Built twice:
@@ -263,17 +269,13 @@
             Microsoft Fabric, and the original open-source stack on GCP.
           </p>
           <ul class="project-points">
-            <li>Delta <code>MERGE</code> upserts make every load idempotent; market-calendar logic skips weekends and holidays.</li>
-            <li>Gold-layer aggregates join price activity with bullish/bearish sentiment, 100-day averages and volume change.</li>
-            <li>Orchestrated by a scheduled Fabric Data Factory pipeline with per-notebook failure alerts to Outlook.</li>
-            <li>GCP twin runs Airflow 3 with Astronomer Cosmos + dbt, MinIO and PostgreSQL, deployed via GitHub Actions.</li>
+            <li>Developed a financial market analytics platform to analyze the day’s three most actively traded stocks, identify potentialdrivers of sharp price and volume movements, and present market data through Power BI.</li>
+            <li>Extracted and transformed raw API data into analysis-ready Delta tables using PySpark and a medallion architecture in Microsoft Fabric, applying data cleaning, validation, and aggregation.</li>
+            <li>Designed a Power BI semantic model and DAX measures comparing closing prices and trading volumes with 100-day averages to highlight unusual activity and support analysis of market trends.</li>
+            <li>Built and deployed a GCP version of the platform, running Airflow and dbt in Docker on a virtual machine for daily
+incremental PostgreSQL updates and hosting a Streamlit dashboard on Cloud Run.</li>
           </ul>
-          <ul class="links">
-            <li><a href="https://www.jinghaodata.engineer" target="_blank" rel="noopener noreferrer">Live Streamlit app <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
-            <li><a href="https://github.com/chenjinghao/ms_fabric_project" target="_blank" rel="noopener noreferrer">Fabric repo <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
-            <li><a href="https://youtu.be/NFiescC8d34" target="_blank" rel="noopener noreferrer">Dashboard walkthrough <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
-            <li><a href="https://github.com/chenjinghao/de-project-1-airflow-dbt-4-ELT" target="_blank" rel="noopener noreferrer">Airflow/dbt backend <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
-          </ul>
+
         </article>
 
         <article class="project">
@@ -316,6 +318,7 @@
           </ul>
           <ul class="links">
             <li><a href="https://ai4hvac.notion.site/" target="_blank" rel="noopener noreferrer">Project site <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://lnkd.in/p/gZSz7FK4" target="_blank" rel="noopener noreferrer">Project post on LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
             <li><a href="https://langara.ca/news-events/stories/meet-winners-applied-research-day" target="_blank" rel="noopener noreferrer">Applied Research Day <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
           </ul>
         </article>
