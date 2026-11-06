@@ -1072,8 +1072,8 @@ main {
 .site-footer {
   max-width: var(--page);
   margin: 0 auto;
-  /* Right padding keeps the footer text clear of the fixed back-to-top button. */
-  padding: 2rem calc(var(--gutter) + 3.5rem) 3rem var(--gutter);
+  /* Side padding keeps the footer clear of the fixed greeter and back-to-top. */
+  padding: 2rem calc(var(--gutter) + 3.5rem) 3rem calc(var(--gutter) + 3.5rem);
   border-top: 1px solid var(--rule);
   display: flex;
   flex-wrap: wrap;
@@ -1200,7 +1200,140 @@ main {
 
 .error-actions { margin: 0; }
 
-/* ---------- 21. Utilities ---------- */
+/* ---------- 21. Greeter ---------- */
+.greeter {
+  position: fixed;
+  left: clamp(0.9rem, 3vw, 2rem);
+  bottom: clamp(0.9rem, 3vw, 2rem);
+  z-index: 40;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.7rem;
+  max-width: calc(100vw - 1.8rem);
+}
+
+.greeter-avatar {
+  flex: none;
+  width: 3.25rem;
+  height: 3.25rem;
+  padding: 0;
+  overflow: hidden;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule-strong);
+  border-radius: 50%;
+  box-shadow: 0 12px 26px -16px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.greeter-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.greeter-avatar:hover {
+  transform: translateY(-2px) scale(1.05);
+  border-color: var(--accent);
+}
+
+.greeter-bubble {
+  position: relative;
+  max-width: 17rem;
+  margin-bottom: 0.35rem;
+  padding: 0.8rem 2.1rem 0.8rem 1rem;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule-strong);
+  border-radius: 14px;
+  box-shadow: 0 18px 34px -26px rgba(0, 0, 0, 0.6);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0.4rem) scale(0.97);
+  transform-origin: bottom left;
+  transition: opacity 220ms ease, transform 220ms ease,
+    visibility 220ms ease;
+}
+
+.greeter.is-open .greeter-bubble {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.greeter-bubble::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  bottom: 16px;
+  width: 9px;
+  height: 9px;
+  background: var(--paper-raised);
+  border-left: 1px solid var(--rule-strong);
+  border-bottom: 1px solid var(--rule-strong);
+  transform: rotate(45deg);
+}
+
+.greeter-text { margin: 0; }
+
+.greeter-close {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.35rem;
+  display: grid;
+  place-items: center;
+  width: 1.4rem;
+  height: 1.4rem;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.greeter-close:hover {
+  color: var(--ink);
+  background: var(--accent-wash);
+}
+
+/* One small wave when the bubble opens. */
+.greeter.is-open .greeter-avatar {
+  animation: greeter-wave 700ms ease-in-out 1;
+}
+
+@keyframes greeter-wave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-7deg); }
+  70% { transform: rotate(6deg); }
+}
+
+@media (max-width: 30rem) {
+  .greeter {
+    right: clamp(0.9rem, 3vw, 2rem);
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .greeter-avatar { width: 2.75rem; height: 2.75rem; }
+
+  .greeter-bubble {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 0;
+    font-size: 0.78125rem;
+  }
+
+  .greeter-bubble::before { display: none; }
+}
+
+/* ---------- 22. Utilities ---------- */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1233,6 +1366,7 @@ main {
   .theme-toggle,
   .hero-links,
   .to-top,
+  .greeter,
   .skip-link { display: none; }
 
   body { background: #fff; color: #000; }

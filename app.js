@@ -132,6 +132,66 @@
     });
   }
 
+  /* ---------- Greeter ---------- */
+  var greeter = document.querySelector(".greeter");
+  if (greeter) {
+    var avatarBtn = greeter.querySelector(".greeter-avatar");
+    var closeBtn = greeter.querySelector(".greeter-close");
+    var STORE = "greeter-seen";
+    var hideTimer = null;
+    var seen = false;
+
+    try {
+      seen = sessionStorage.getItem(STORE) === "1";
+    } catch (e) {
+      /* Storage blocked: the greeting simply opens on every load. */
+    }
+
+    function openBubble() {
+      greeter.classList.add("is-open");
+      if (avatarBtn) avatarBtn.setAttribute("aria-expanded", "true");
+      if (hideTimer) clearTimeout(hideTimer);
+      hideTimer = setTimeout(closeBubble, 12000);
+    }
+
+    function closeBubble() {
+      greeter.classList.remove("is-open");
+      if (avatarBtn) avatarBtn.setAttribute("aria-expanded", "false");
+      if (hideTimer) {
+        clearTimeout(hideTimer);
+        hideTimer = null;
+      }
+      try {
+        sessionStorage.setItem(STORE, "1");
+      } catch (e) {
+        /* Ignore. */
+      }
+    }
+
+    // Greet once per browser session, never on every page view.
+    if (!seen) setTimeout(openBubble, 1400);
+
+    if (avatarBtn) {
+      avatarBtn.addEventListener("click", function () {
+        if (greeter.classList.contains("is-open")) closeBubble();
+        else openBubble();
+      });
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener("click", function () {
+        closeBubble();
+        if (avatarBtn) avatarBtn.focus();
+      });
+    }
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && greeter.classList.contains("is-open")) {
+        closeBubble();
+      }
+    });
+  }
+
   /* ---------- Footer year ---------- */
   var year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
