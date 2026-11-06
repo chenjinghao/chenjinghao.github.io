@@ -17,7 +17,7 @@ push to `main`.
 | `styles.css` | Design tokens, layout and components, light + dark |
 | `app.js` | Theme toggle, sticky-header state, nav scroll-spy |
 | `assets/Jinghao_Chen_Resume.pdf` | Résumé linked from the header and contact section |
-| `assets/favicon.svg` | "JC" monogram favicon |
+| `assets/image.png` | Avatar in the header, and the site favicon |
 
 ## Preserved from the previous site
 
