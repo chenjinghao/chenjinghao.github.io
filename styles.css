@@ -168,8 +168,8 @@ code {
 .brand-mark {
   display: block;
   flex: none;
-  width: 1.9rem;
-  height: 1.9rem;
+  width: 2.75rem;
+  height: 2.75rem;
   border-radius: 50%;
   object-fit: cover;
   background: var(--paper-raised);
