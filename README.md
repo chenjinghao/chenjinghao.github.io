@@ -19,16 +19,13 @@ push to `main`.
 | `assets/Jinghao_Chen_Resume.pdf` | Résumé linked from the header and contact section |
 | `assets/image.png` | Avatar in the header, and the site favicon |
 
-## Legacy pages
+## History
 
-Four standalone pages from the previous site are kept and still reachable; all
-carry `noindex` so they do not compete with the homepage in search:
-
-- `greetings.html`, `mailme.html`, `socialmedias.html`, `linkedinprofilebadge.html`
-
-Everything else from the old site — the Bootstrap homepage, its stylesheet,
-`script.js`, the `resouces/` images, the screenshots and the old README — was
-removed and remains available in git history:
+The site was rebuilt in November 2026 on top of an older class-project repo. Every
+file from that repo has now been removed: the Bootstrap homepage, its stylesheet,
+`script.js`, the `resouces/` images, the screenshots, the old README, four
+standalone sub-pages, and two workflows (`first.yml`, `static.yml`) that no longer
+served any purpose. Nothing was lost — it all remains in git history:
 
 ```powershell
 git log --diff-filter=D --name-only       # what was deleted, and when
