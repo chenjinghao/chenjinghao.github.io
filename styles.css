@@ -448,6 +448,8 @@ main {
   color: var(--muted);
 }
 
+.section-body > .subhead:first-child { margin-top: 0; }
+
 /* ---------- 9. Pillars ---------- */
 .pillars {
   display: grid;
@@ -638,7 +640,8 @@ main {
   gap: 0.25rem 1rem;
 }
 
-.entry-head h3 {
+.entry-head h3,
+.entry-head h4 {
   font-size: 1.0625rem;
   font-weight: 600;
   letter-spacing: -0.01em;
