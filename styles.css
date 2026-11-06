@@ -405,50 +405,30 @@ main {
   color: var(--muted);
 }
 
-.story-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: clamp(1.75rem, 5vw, 4.5rem);
-  align-items: start;
-}
-
 .story p {
-  font-size: 0.95rem;
+  margin: 0 0 1.5rem;
+  font-size: 1rem;
   line-height: 1.65;
   color: var(--ink-soft);
 }
 
-.story-intro { max-width: 44ch; }
-
-.story-right { max-width: 46ch; }
-
 .story blockquote {
-  margin: 0 0 1.5rem;
-  padding: 0.15rem 0 0.15rem 1.35rem;
+  margin: 0 0 1.75rem;
+  padding: 0.25rem 0 0.25rem clamp(1rem, 2vw, 1.75rem);
   border-left: 2px solid var(--accent);
 }
 
 .story blockquote p {
   margin: 0;
-  max-width: 34ch;
   font-family: var(--serif);
-  font-size: clamp(1.3rem, 1rem + 0.9vw, 1.75rem);
-  line-height: 1.4;
-  letter-spacing: -0.015em;
+  font-size: clamp(1.4rem, 1rem + 1.5vw, 2.15rem);
+  line-height: 1.32;
+  letter-spacing: -0.02em;
   color: var(--ink);
+  text-wrap: balance;
 }
 
-.story-outro { margin: 0; }
-
-@media (max-width: 60rem) {
-  .story-grid {
-    grid-template-columns: 1fr;
-    gap: 1.75rem;
-  }
-
-  .story-intro,
-  .story-right { max-width: none; }
-}
+.story-outro { margin-bottom: 0; }
 
 /* ---------- 8. Sections ---------- */
 .section {
