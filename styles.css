@@ -251,6 +251,15 @@ code {
   font-size: 0.8125rem;
 }
 
+.btn-github { gap: 0.4rem; }
+
+.btn-github .gh-icon {
+  width: 0.9rem;
+  height: 0.9rem;
+  flex: none;
+  fill: currentColor;
+}
+
 /* ---------- 5. Theme toggle ---------- */
 .theme-toggle {
   display: inline-grid;
@@ -1014,6 +1023,27 @@ main {
 
 @media (max-width: 30rem) {
   .brand-name { display: none; }
+
+  /* Icon-only GitHub button; the label stays in the accessibility tree. */
+  .btn-github {
+    gap: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .btn-github .btn-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
 
   .stats { grid-template-columns: 1fr 1fr; }
 
