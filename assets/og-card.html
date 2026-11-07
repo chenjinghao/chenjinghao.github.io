@@ -13,69 +13,58 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 66px 76px;
+    padding: 54px 64px;
     overflow: hidden;
     background: #f8f6f2;
     color: #191a17;
     font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   }
-  /* soft accent glow in the corner, echoing the site's teal */
   body::after {
     content: "";
     position: absolute;
-    right: -160px;
-    top: -180px;
-    width: 520px;
-    height: 520px;
+    right: -170px;
+    top: -200px;
+    width: 540px;
+    height: 540px;
     border-radius: 50%;
     background: radial-gradient(circle, rgba(15, 95, 87, 0.10), rgba(15, 95, 87, 0) 68%);
   }
-  .top { display: flex; align-items: center; gap: 22px; }
   .avatar {
-    width: 92px; height: 92px; border-radius: 50%;
-    object-fit: cover; border: 1px solid #cfcabf;
-    box-shadow: 0 10px 24px -18px rgba(0, 0, 0, 0.6);
-  }
-  .label {
-    font-family: ui-monospace, Consolas, monospace;
-    font-size: 15px; letter-spacing: 0.16em; text-transform: uppercase;
-    color: #6d6d64;
+    width: 124px; height: 124px; border-radius: 50%;
+    object-fit: cover; border: 2px solid #cfcabf;
+    box-shadow: 0 12px 26px -18px rgba(0, 0, 0, 0.6);
   }
   h1 {
     font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-    font-size: 128px; font-weight: 500; letter-spacing: -0.04em; line-height: 0.92;
+    font-size: 196px;
+    font-weight: 500;
+    letter-spacing: -0.045em;
+    line-height: 0.86;
   }
   .rule {
-    width: 96px; height: 3px; border-radius: 2px;
-    background: #0f5f57; margin: 26px 0 22px;
+    width: 150px; height: 6px; border-radius: 3px;
+    background: #0f5f57; margin: 22px 0 18px;
   }
-  .role { font-size: 34px; color: #45463f; letter-spacing: -0.01em; }
-  .bottom { display: flex; align-items: baseline; justify-content: space-between; }
+  .role {
+    font-size: 62px;
+    letter-spacing: -0.015em;
+    color: #45463f;
+  }
   .url {
     font-family: ui-monospace, Consolas, monospace;
-    font-size: 22px; letter-spacing: 0.02em; color: #0f5f57;
-  }
-  .loc {
-    font-family: ui-monospace, Consolas, monospace;
-    font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; color: #6d6d64;
+    font-size: 38px;
+    letter-spacing: 0.01em;
+    color: #0f5f57;
   }
 </style>
 </head>
 <body>
-  <div class="top">
-    <img class="avatar" src="image.png" alt="">
-    <div class="label">Portfolio</div>
-  </div>
-
+  <img class="avatar" src="image.png" alt="">
   <div>
     <h1>Adam Chen</h1>
     <div class="rule"></div>
     <p class="role">Data Analyst &amp; Analytics Engineer</p>
   </div>
-
-  <div class="bottom">
-    <p class="url">chenjinghao.github.io</p>
-    <p class="loc">Surrey, BC</p>
-  </div>
+  <p class="url">chenjinghao.github.io</p>
 </body>
 </html>
