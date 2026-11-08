@@ -680,6 +680,14 @@ main {
 
 .links a:hover { text-decoration: underline; }
 
+.links-note {
+  max-width: 46ch;
+  margin: 0.7rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
 /* ---------- 11. Timeline ---------- */
 .timeline {
   margin: 0;
@@ -1358,6 +1366,83 @@ main {
 
   .greeter-bubble::before { display: none; }
 }
+
+/* ---------- 21b. Section rail ---------- */
+.rail {
+  position: fixed;
+  top: 50%;
+  right: clamp(1rem, 2vw, 1.75rem);
+  z-index: 45;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.6rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-50%) translateX(10px);
+  transition: opacity 240ms ease, transform 240ms ease, visibility 240ms;
+}
+
+.rail.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%);
+}
+
+.rail-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  padding: 0.32rem 0;
+  font-size: 0.75rem;
+  line-height: 1;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.rail-item:hover,
+.rail-item:focus-visible { color: var(--ink); }
+
+.rail-item.is-active { color: var(--ink); font-weight: 550; }
+
+.rail-label {
+  white-space: nowrap;
+  opacity: 0.85;
+}
+
+.rail-item.is-active .rail-label { opacity: 1; }
+
+.rail-dot {
+  flex: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--rule-strong);
+  transition: width 180ms ease, background 180ms ease;
+}
+
+.rail-item:hover .rail-dot { background: var(--muted); }
+
+.rail-item.is-active .rail-dot {
+  width: 20px;
+  background: var(--accent);
+}
+
+/* Not enough gutter on smaller screens: keep the header nav only. */
+@media (max-width: 1200px) {
+  .rail { display: none; }
+}
+
+@media print {
+  .rail { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rail, .rail-dot { transition: none; }
+}
+
 
 /* ---------- 22. Utilities ---------- */
 .visually-hidden {

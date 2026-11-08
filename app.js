@@ -192,6 +192,54 @@
     });
   }
 
+    // Section rail: reveal after the hero, track the section in view, jump on click.
+    (function () {
+      var rail = document.querySelector(".rail");
+      if (!rail) return;
+
+      var items = Array.prototype.slice.call(rail.querySelectorAll(".rail-item"));
+      var sections = items.map(function (a) {
+        return document.querySelector(a.getAttribute("href"));
+      });
+      var ticking = false;
+
+      function update() {
+        ticking = false;
+
+        rail.classList.toggle("is-visible", window.scrollY > 320);
+
+        var line = window.innerHeight * 0.35;
+        var active = 0;
+        sections.forEach(function (sec, i) {
+          if (sec && sec.getBoundingClientRect().top <= line) active = i;
+        });
+
+        // At the very bottom the short Contact section never reaches the line.
+        var atBottom = window.innerHeight + window.scrollY >=
+          document.documentElement.scrollHeight - 4;
+        if (atBottom) active = items.length - 1;
+
+        items.forEach(function (a, i) {
+          var on = i === active;
+          a.classList.toggle("is-active", on);
+          if (on) a.setAttribute("aria-current", "true");
+          else a.removeAttribute("aria-current");
+        });
+      }
+
+      function request() {
+        if (!ticking) {
+          ticking = true;
+          window.requestAnimationFrame(update);
+        }
+      }
+
+      window.addEventListener("scroll", request, { passive: true });
+      window.addEventListener("resize", request);
+      update();
+    })();
+  
+
   /* ---------- Footer year ---------- */
   var year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
